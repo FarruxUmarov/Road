@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 //})->middleware('auth:sanctum');
 
 
-Route::resource('/licenses', LicenseController::class)->middleware('auth:sanctum');
-Route::resource('/fines', FineController::class)->middleware('auth:sanctum');
-Route::resource('/cars', CarController::class)->middleware('auth:sanctum');
+Route::resource('/licenses', LicenseController::class);
+Route::resource('/fines', FineController::class);
+Route::resource('/cars', CarController::class);
 

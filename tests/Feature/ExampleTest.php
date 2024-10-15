@@ -16,4 +16,25 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_the_licences_returns_a_successful_response()
+    {
+        $response = $this->get('api/licenses');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_the_fines_returns_a_successful_response()
+    {
+        $response = $this->get('api/licenses');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_the_cars_returns_a_successful_response()
+    {
+        $response = $this->get('api/licenses');
+
+        $response->assertStatus(200);
+    }
 }
