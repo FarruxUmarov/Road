@@ -26,14 +26,14 @@ class ExampleTest extends TestCase
 
     public function test_the_fines_returns_a_successful_response()
     {
-        $response = $this->get('api/licenses');
+        $response = $this->get('api/fines');
 
         $response->assertStatus(200);
     }
 
     public function test_the_cars_returns_a_successful_response()
     {
-        $response = $this->get('api/licenses');
+        $response = $this->get('api/cars');
 
         $response->assertStatus(200);
     }
